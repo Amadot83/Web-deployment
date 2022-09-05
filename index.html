@@ -2,16 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>Kirjasto</title>
-    <script src="scriptLogin.js"></script>
+    <script src="script.js"></script>
+    <title>Canvas play</title>
+</head>
 <body>
-<h2>Login</h2>
-<form action="/index.html">
-  <label for="name">Käyttäjätunnus:</label>
-  <input type="text" id="userName" name="userName" placeholder="User name"><br><br>
-  <label for="passWord">Salasana:</label>
-  <input type="text" id="passWord" name="passWord" placeholder="Password"><br><br>
-  <button onclick="user()">Submit</button>
-</form>
+    <canvas id="myCanvas" style="background-color: green;" 
+    width="500" height="500" onmousemove="canvasMouseMove(event)"></canvas>
+    <input type="button" onclick="startCanvas()" value="Start" id="startButton"/>
+    <input  type="button" onclick="clearCanvas()" value="Clear"/>  
 </body>
 </html>
